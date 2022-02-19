@@ -1,22 +1,28 @@
-const inputvariable= {
-    inpv : 0};
-Object.defineProperty(inputvariable, "setvalue", {
-        set : function (value) {this.inpv=value;}
-      });
-Object.defineProperty(inputvariable, "getvalue", {
-        get : function () {return this.inpv;}
-      });
-function OnchangeTextbox()
+var inputvariable= {};
+Object.defineProperty(inputvariable, "inputvalue", {
+    get : function (){
+      
+      return value;
+    },
+    set : function (inputValue){
+      
+      document.getElementById("textid").value=inputValue;
+      value=inputValue;
+
+    },
+        
+});
+
+function OnchangeTextbox(event)
 {
-var x=document.getElementById("textid");
-inputvariable.setvalue=x.value;
-document.getElementById("div1").innerHTML =inputvariable.getvalue;
+    inputvariable.inputvalue=event.target.value;
+    document.getElementById("div1").innerHTML =inputvariable.inputvalue;
 }   
 setInterval(function(){
                        
-                        inputvariable.setvalue= Math.floor((Math.random() * 100) + 1);
-                        document.getElementById("div1").innerHTML =inputvariable.getvalue;
-                        document.getElementById("textid").value=inputvariable.getvalue;
+                        inputvariable.inputvalue= Math.floor((Math.random() * 100) + 1);
+                        document.getElementById("div1").innerHTML =inputvariable.inputvalue;
+                        
                     }, 10000);
 
 

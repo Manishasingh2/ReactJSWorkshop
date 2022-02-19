@@ -27,22 +27,30 @@
             h3{
                 color:darkslateblue;
             }
+            .boxclass{
+                
+                border-style: double;
+                color:black;
+                width:30%;   
+                align-content: center;
+            }
          
          
         </style>
     </head>
-    <body >
-        <script src="jsfile2.js" ></script>
-        
-        <div>
-            <h3>Input Field:</h3>
-            <input type="text"  onchange="OnchangeTextbox()" id="textid"/>
-        </div>
-    </br>
-        <div>
-            <h3>Input Variable:</h3>
-            <p  id="div1" ></p>
-        </div> 
-    
-    </body>
+    <center>
+        <body class="boxclass">
+            <script src="jsfile2.js" ></script>
+            <div>
+                <h3>Input Field:</h3>
+                <input type="text"  onchange="OnchangeTextbox(event)" id="textid"/>
+            </div>
+            </br>
+            <div>
+                <h3>Input Variable:</h3>
+                <h3>(Generated Randomly after every 10sec)</h3>
+                <p  id="div1" ></p>
+            </div> 
+        </body>
+    </center>
 </html>
