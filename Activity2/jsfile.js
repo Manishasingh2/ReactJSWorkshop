@@ -1,5 +1,6 @@
 function mouseOver1()
 {
+    
     document.getElementById("div1").style.color = "red";
     document.getElementById("div1").style.textAlign="center";
 }
