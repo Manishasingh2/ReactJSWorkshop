@@ -1,0 +1,30 @@
+[
+  {"id": 1,
+    "userName": "Manisha",
+    "avatar": "https://www.insureon.com/-/media/blog/posts/2021/photo_group-of-employees-working-on-project.png?h=370&iar=0&w=750&rev=3faabd3c0f7c4e11966caaa037fa4fc8",
+    "Designation": "Software Developer",
+    "Salary":5000
+    
+  },
+  {"id": 2,
+    "userName": "Mayor",
+    "avatar": "https://www.insureon.com/-/media/blog/posts/2021/photo_group-of-employees-working-on-project.png?h=370&iar=0&w=750&rev=3faabd3c0f7c4e11966caaa037fa4fc8",
+    "Designation": "QA",
+    "Salary":5000
+    
+  },
+  { "id": 3,
+    "userName": "Namita",
+    "avatar": "https://www.insureon.com/-/media/blog/posts/2021/photo_group-of-employees-working-on-project.png?h=370&iar=0&w=750&rev=3faabd3c0f7c4e11966caaa037fa4fc8",
+    "Designation": "Developer",
+    "Salary":5000
+   
+  },
+  { "id": 4,
+    "userName": "Tom",
+    "avatar": "https://www.insureon.com/-/media/blog/posts/2021/photo_group-of-employees-working-on-project.png?h=370&iar=0&w=750&rev=3faabd3c0f7c4e11966caaa037fa4fc8",
+    "Designation": "Developer",
+    "Salary":5000
+   
+  }
+]
