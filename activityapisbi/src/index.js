@@ -3,9 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import PriceComponent from './classComponent/PriceComponent';
 import reportWebVitals from './reportWebVitals';
-
+var stockInfo = [
+  "https://priceapi.moneycontrol.com/pricefeed/nse/equitycash/NLC",
+  "https://priceapi.moneycontrol.com/pricefeed/nse/equitycash/SBI",
+  "https://priceapi.moneycontrol.com/pricefeed/nse/equitycash/NAC"
+]
 ReactDOM.render(
-  <PriceComponent></PriceComponent>,
+  <div>
+  {stockInfo.map((stock) => {
+    return <PriceComponent apiUrl={stock}></PriceComponent>
+})}</div>,
   document.getElementById('root')
 );
 
