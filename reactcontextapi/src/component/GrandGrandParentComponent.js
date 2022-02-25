@@ -9,7 +9,7 @@ export default function GrandGrandParent() {
     const value = {nativeVillage,setNativeVillage };
     return (
         <AppContext.Provider value={value}>
-            <h1 style={{color:"blue"}}>This is Grand Grand Parent {nativeVillage}</h1><hr/>
+            <h1 >This is Grand Grand Parent {nativeVillage}</h1><hr/>
             <GrandParent></GrandParent>
         </AppContext.Provider>
         )
