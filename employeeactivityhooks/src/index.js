@@ -2,22 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import EmployeeListComponent from './components/EmployeeListComponent';
-import UpdateEmployeeComponent from './components/UpdateEmployeeComponent';
 import App from "./components/AddEmployeeComponent"
 import reportWebVitals from './reportWebVitals';
-
 ReactDOM.render(
-  <div>
-     <EmployeeListComponent></EmployeeListComponent>
+  <>
+    <EmployeeListComponent></EmployeeListComponent>
     <App></App>
-    <UpdateEmployeeComponent></UpdateEmployeeComponent>
-   
-  </div>
+  </>
   ,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
