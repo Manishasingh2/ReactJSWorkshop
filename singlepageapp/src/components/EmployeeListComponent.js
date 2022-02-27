@@ -27,6 +27,7 @@ export default class EmployeeListComponent extends React.Component
                     employeeList: response.data
                 })
             })
+            alert("Employee Deleted!!");
         });
       };
     updateEmployee = (event) => {

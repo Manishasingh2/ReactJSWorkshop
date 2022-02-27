@@ -50,7 +50,7 @@ function HeaderComponent() {
 
 }
 function FooterComponent() {
-    return <h3 style={{color:"white",backgroundColor:"black"}} >This is Footer Component</h3>
+    return <h3 style={{color:"white",backgroundColor:"black",position: "fixed",width: "100%",left:"0",bottom:"0"}} >This is Footer Component</h3>
 }
 
 function AboutComponent() {

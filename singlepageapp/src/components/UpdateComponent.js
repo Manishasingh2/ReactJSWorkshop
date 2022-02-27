@@ -43,6 +43,8 @@ export default class UpdateComponent extends React.Component {
         ename:this.state.ename,
         salary : this.state.salary,
         designation : this.state.designation}).then(res =>console.log(res)).catch(err => console.log(err))
+        alert("Employee Details Updated!!");
+        this.props.history.push('/');
     }
 
     componentDidMount() {
@@ -58,27 +60,27 @@ export default class UpdateComponent extends React.Component {
 
     render() {
         return (
-            <div>
-                <div  style={{color:"pink"}}>
+            <div >
+                <div  style={{color:"blue"}}>
                     <h5 >UPDATE EMPLOYEE</h5>
-                    <form className="row g-3">
+                    <form className="row g-3" >
                     <div className="col-md-4">
-                        <label className="form-label" style={{color:"white"}}>Employee ID</label>
+                        <label className="form-label" style={{color:"black"}}>Employee ID</label>
                         <input className="form-control" style={{width:"250px"}}  value={this.state.eid}  onChange={this.onChangeEid}/>
                     </div>
 
                     <div>
-                        <label className="form-label" style={{color:"white"}}>Employee Name</label>
+                        <label className="form-label" style={{color:"black"}}>Employee Name</label>
                         <input className="form-control" style={{width:"250px"}} value={this.state.ename} onChange={this.onChangeEname}/>
                     </div>
                 
                     <div>
-                        <label className="form-label" style={{color:"white"}}>Salary</label>
+                        <label className="form-label" style={{color:"black"}}>Salary</label>
                         <input className="form-control" style={{width:"250px"}} value={this.state.salary}  onChange={this.onChangeSalary}/>
                     </div>
 
                     <div>
-                        <label className="form-label" style={{color:"white"}}>Designation</label>
+                        <label className="form-label" style={{color:"black"}}>Designation</label>
                         <input className="form-control" style={{width:"250px"}} value={this.state.designation} onChange={this.onChangeDestination}/>
                     </div>
 

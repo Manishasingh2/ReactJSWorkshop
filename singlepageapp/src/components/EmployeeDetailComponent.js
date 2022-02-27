@@ -5,7 +5,9 @@ export default function EmployeeDetailComponent(props)
       width:"300px",
       margin: "50px" ,
       display:"inline-block",
-      border: "1px solid red"
+      border: "1px solid red",
+      backgroundColor:"black"
+    
     },
     headerStyling:{
       color:"green"  
@@ -16,7 +18,7 @@ export default function EmployeeDetailComponent(props)
       width:"250px"
     },
     headerstyle:{
-      color:"purple", 
+      color:"white", 
     }
   }
   return( 

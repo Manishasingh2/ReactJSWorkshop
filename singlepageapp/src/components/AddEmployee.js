@@ -32,11 +32,12 @@ export default class AddEmployee extends React.Component {
   };
   handleSubmit = event => {
     event.preventDefault();
-   axios.post("https://localhost:5001/api/Employee/postemp", {eid:this.state.eid,ename:this.state.ename,salary:this.state.salary,designation:this.state.designation})
+    axios.post("https://localhost:5001/api/Employee/postemp", {eid:this.state.eid,ename:this.state.ename,salary:this.state.salary,designation:this.state.designation})
       .then(res =>
         console.log(res.data))
       .catch(err => console.log(err))
-
+    alert("New Employee Added!!");
+    this.props.history.push('/');
   };
   render() {
     return (
